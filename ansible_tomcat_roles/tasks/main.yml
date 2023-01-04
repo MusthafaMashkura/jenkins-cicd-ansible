@@ -83,11 +83,13 @@
         state: started
 
    - name: Install docker using yum
+     become: yes
      yum:
       name: docker
       state: present
 
    - name: Enable Docker CE service at startup
+     become: yes
      service:
        name: docker
        state: started
