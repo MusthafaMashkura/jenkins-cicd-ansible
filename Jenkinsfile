@@ -9,7 +9,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'main', url: 'https://github.com/MusthafaMashkura/jenkins-cicd-ansible.git'
+                git branch: 'ansible-roles-cicd', url: 'https://github.com/MusthafaMashkura/jenkins-cicd-ansible.git'
              
           }
         }
@@ -49,10 +49,10 @@ pipeline {
       stage('Ansible Deploy') {
            steps {
                sh 'ls -ltrh'
-               sh 'ansible-playbook -i localhost myfirstplaybook.yml'
+               sh 'ansible-playbook --vault-password-file=/var/lib/jenkins/.vault_pass -i inventory mysecondplaybook.yml'
             }
         }
-              stage('OWASP DAST') {
+   /*       9-    stage('OWASP DAST') {
            steps {
                sh '''
                 docker pull owasp/zap2docker-stable
@@ -65,7 +65,7 @@ pipeline {
                 
                '''
             }
-        }
+        }*/
     }
 /*    post { 
         always { 
