@@ -81,3 +81,14 @@
         name: tomcat
         enabled: yes
         state: started
+
+   - name: Install docker using yum
+     yum:
+      name: docker
+      state: present
+
+   - name: Enable Docker CE service at startup
+     service:
+       name: docker
+       state: started
+       enabled: yes
