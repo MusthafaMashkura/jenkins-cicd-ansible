@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,8 +15,11 @@ public class LoginAutomation {
 public void login() {
 
 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+ChromeOptions chromeOptions = new ChromeOptions();
+chromeOptions.addArguments("--headless");
+chromeOptions.addArguments("--no-sandbox");
 
-WebDriver driver=new ChromeDriver();
+WebDriver driver=new ChromeDriver(chromeOptions);
 
 driver.manage().window().maximize();
 
