@@ -20,14 +20,12 @@ System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 //ChromeOptions chromeOptions = new ChromeOptions();
 //chromeOptions.addArguments("--headless");
 //chromeOptions.addArguments("--no-sandbox");
-
 //WebDriver driver=new ChromeDriver(chromeOptions);
-chromeOptions = webdriver.ChromeOptions();
-chromeOptions.add_argument("--headless");
-//chromeOptions.add_argument("--remote-debugging-port=9222")
-chromeOptions.add_argument('--no-sandbox');
 
-driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions);
+ chromeOptions = webdriver.ChromeOptions();
+ chromeOptions.addArguments("--headless");
+ chromeOptions.addArguments("--no-sandbox");
+ driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions);
 // TESTING CONTENT 
  
  //WebDriver driver=new ChromeDriver();
