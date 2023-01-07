@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,7 +20,13 @@ System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 //chromeOptions.addArguments("--no-sandbox");
 
 //WebDriver driver=new ChromeDriver(chromeOptions);
-WebDriver driver=new ChromeDriver();
+chromeOptions = webdriver.ChromeOptions()
+chromeOptions.add_argument("--headless")
+//chromeOptions.add_argument("--remote-debugging-port=9222")
+chromeOptions.add_argument('--no-sandbox')
+
+driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions)
+ //WebDriver driver=new ChromeDriver();
 
 driver.manage().window().maximize();
 
