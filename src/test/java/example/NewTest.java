@@ -45,7 +45,7 @@ public class jenkins_demo
 {
  
 @Test
-publicvoidtestgooglrsearch(){
+public void testgooglesearch(){
  
 WebDriver driver = new ChromeDriver();
 //it will open the goggle page
