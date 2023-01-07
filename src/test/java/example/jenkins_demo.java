@@ -14,7 +14,7 @@ public class jenkins_demo
 @Test
 public void testgooglesearch(){
 
-//
+// TESTING CONTENT
 //ChromeOptions chromeOptions = new ChromeOptions();
 //chromeOptions.addArguments("--headless");
 //chromeOptions.addArguments("--no-sandbox");
@@ -28,7 +28,7 @@ chromeOptions.add_argument('--no-sandbox');
 driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions);
  //WebDriver driver=new ChromeDriver();
 
-//
+// TESTING CONTENT
  
 //WebDriver driver = new ChromeDriver();
 //it will open the goggle page
