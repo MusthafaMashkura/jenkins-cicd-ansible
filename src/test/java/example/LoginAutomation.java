@@ -46,9 +46,9 @@ WebElement password=driver.findElement(By.id("user_password"));
  
 WebElement login=driver.findElement(By.name("commit"));
 
-username.sendKeys("abc@gmail.com");
+username.sendKeys("musthamsd@gmail.com");
 
-password.sendKeys("your_password");
+password.sendKeys("Mashkura@143");
 
 login.click();
 
