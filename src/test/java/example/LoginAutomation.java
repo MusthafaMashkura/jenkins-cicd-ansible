@@ -15,17 +15,21 @@ public class LoginAutomation {
 public void login() {
 
 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+ 
+// TESTING CONTENT
 //ChromeOptions chromeOptions = new ChromeOptions();
 //chromeOptions.addArguments("--headless");
 //chromeOptions.addArguments("--no-sandbox");
 
 //WebDriver driver=new ChromeDriver(chromeOptions);
-chromeOptions = webdriver.ChromeOptions()
-chromeOptions.add_argument("--headless")
+chromeOptions = webdriver.ChromeOptions();
+chromeOptions.add_argument("--headless");
 //chromeOptions.add_argument("--remote-debugging-port=9222")
-chromeOptions.add_argument('--no-sandbox')
+chromeOptions.add_argument('--no-sandbox');
 
-driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions)
+driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions);
+// TESTING CONTENT 
+ 
  //WebDriver driver=new ChromeDriver();
 
 driver.manage().window().maximize();
