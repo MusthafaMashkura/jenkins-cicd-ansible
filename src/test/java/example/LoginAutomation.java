@@ -44,7 +44,7 @@ driver.findElement(By.id("user_password"));
 //
 WebElement password=driver.findElement(By.id("user_password"));
  
-WebElement login=driver.findElement(By.name("commit"));
+//WebElement login=driver.findElement(By.name("commit"));
 
 username.sendKeys("musthamsd@gmail.com");
 
