@@ -15,7 +15,8 @@ public class TecAdminSeleniumTest {
  
                 WebDriver driver = new ChromeDriver(chromeOptions);
  
-                driver.get("https://google.com");
+         //       driver.get("https://google.com");
+                driver.get("http://13.232.140.244:8080/hello-world-maven/");
  
                 Thread.sleep(1000);
  
