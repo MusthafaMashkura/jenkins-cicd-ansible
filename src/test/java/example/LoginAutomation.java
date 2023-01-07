@@ -15,11 +15,12 @@ public class LoginAutomation {
 public void login() {
 
 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-ChromeOptions chromeOptions = new ChromeOptions();
-chromeOptions.addArguments("--headless");
-chromeOptions.addArguments("--no-sandbox");
+//ChromeOptions chromeOptions = new ChromeOptions();
+//chromeOptions.addArguments("--headless");
+//chromeOptions.addArguments("--no-sandbox");
 
-WebDriver driver=new ChromeDriver(chromeOptions);
+//WebDriver driver=new ChromeDriver(chromeOptions);
+WebDriver driver=new ChromeDriver();
 
 driver.manage().window().maximize();
 
