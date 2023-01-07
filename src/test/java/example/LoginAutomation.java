@@ -34,10 +34,16 @@ driver.manage().window().maximize();
 
 driver.get("https://www.browserstack.com/users/sign_in");
 
-WebElement username=driver.findElement(By.id("user_email_Login"));
+ //added below line
+driver.findElement(By.id("user_email_login"));
+//
+WebElement username=driver.findElement(By.id("user_email_login"));
 
+//added below line
+driver.findElement(By.id("user_password"));
+//
 WebElement password=driver.findElement(By.id("user_password"));
-
+ 
 WebElement login=driver.findElement(By.name("commit"));
 
 username.sendKeys("abc@gmail.com");
