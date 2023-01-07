@@ -20,7 +20,8 @@ public class TecAdminSeleniumTest {
  
                 Thread.sleep(1000);
  
-                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+         //       if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+                if (driver.getPageSource().contains("ansible roles")) {
                         System.out.println("Pass");
                 } else {
                         System.out.println("Fail");
