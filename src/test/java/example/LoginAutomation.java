@@ -17,15 +17,15 @@ public void login() {
 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
  
 // TESTING CONTENT
-//ChromeOptions chromeOptions = new ChromeOptions();
-//chromeOptions.addArguments("--headless");
-//chromeOptions.addArguments("--no-sandbox");
-//WebDriver driver=new ChromeDriver(chromeOptions);
+ChromeOptions chromeOptions = new ChromeOptions();
+chromeOptions.addArguments("--headless");
+chromeOptions.addArguments("--no-sandbox");
+WebDriver driver=new ChromeDriver(chromeOptions);
 
- chromeOptions = webdriver.ChromeOptions();
- chromeOptions.addArguments("--headless");
- chromeOptions.addArguments("--no-sandbox");
- driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions);
+// chromeOptions = webdriver.ChromeOptions();
+// chromeOptions.addArguments("--headless");
+// chromeOptions.addArguments("--no-sandbox");
+// driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions);
 // TESTING CONTENT 
  
  //WebDriver driver=new ChromeDriver();
