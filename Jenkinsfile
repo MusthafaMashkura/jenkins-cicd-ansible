@@ -30,11 +30,11 @@ pipeline {
                 }
             }
         }
-                     stage('Owasp Dependency check') {
+  /*                   stage('Owasp Dependency check') {
            steps {
                dependencyCheck additionalArguments: '--format HTML', odcInstallation: 'my-dpcheck'
             }
-        }
+        }*/
       stage('Build') {
            steps {
                sh 'mvn clean test package'
@@ -52,7 +52,7 @@ pipeline {
                sh 'ansible-playbook --vault-password-file=/var/lib/jenkins/.vault_pass -i inventory mysecondplaybook.yml'
             }
         }
-              stage('OWASP DAST') {
+          /*    stage('OWASP DAST') {
            steps {
                sh '''
                 docker pull owasp/zap2docker-stable
@@ -65,9 +65,18 @@ pipeline {
                 
                '''
             }
+        }*/
+               stage('Selenium Testing') {
+           steps {
+               sh '''
+                export CLASSPATH=".:/var/lib/jenkins/selenium-server-standalone.jar:/var/lib/jenkins/testng-6.8.7.jar"
+                java seleniumTest.java
+                
+                '''
+           }
         }
     }
-/*    post { 
+   /* post { 
         always { 
             cleanWs()
         }
