@@ -4,6 +4,7 @@
  <test name="Test">
   <classes>
    <class name="example.jenkins_demo"/>
+   <class name="example.LoginAutomation"/>
   </classes>
  </test>
 </suite>
