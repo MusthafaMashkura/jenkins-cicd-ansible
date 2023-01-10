@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
  
 public class SeleniumTest {
  
+@Test
+ 
         public static void main(String[] args) throws IOException, InterruptedException {
                 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
                 ChromeOptions chromeOptions = new ChromeOptions();
