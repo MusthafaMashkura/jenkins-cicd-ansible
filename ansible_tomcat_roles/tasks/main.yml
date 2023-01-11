@@ -70,7 +70,7 @@
    - name: Copy war files to tomcat
      become: yes
      copy:
-       src: /var/lib/jenkins/workspace/Jenkins-selenium-pipeline/target/hello-world-maven.war
+       src: /var/lib/jenkins/workspace/Jenkins-selenium-pipeline-updated/target/hello-world-maven.war
        dest: /opt/tomcat8/apache-tomcat-8.5.84/webapps/
        owner: tomcat
        group: tomcat
