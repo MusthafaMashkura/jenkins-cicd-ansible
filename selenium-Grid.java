@@ -5,3 +5,28 @@ import java.net.URL;
 import org.openqa.selenium.remote.RemoteWebDriver; 
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+
+public class SeleniumGridTest {
+  
+  public void JenkinsDemoFunc() throws MalformedURLException {
+        ChromeOptions chromeOptions = new ChromeOptions();
+        //initialize chromeOptions
+        chromeOptions.setCapability("browserName", "chrome");
+        //Define on which browser you want to execute your tests.
+        chromeOptions.setCapability("platformName", "LINUX");
+        //Define in which mode your tests will run.
+        chromeOptions.addArguments("--headless");
+        //Define the platform on which you will execute your tests
+        WebDriver driver = new RemoteWebDriver(new URL("http://13.232.140.244:4445/wd/hub"), chromeOptions);
+        //URL to the hub running on your local system
+        driver.get("http://13.232.140.244:8080/hello-world-maven/");
+        //URL to hit
+        log.debug(driver.getTitle());
+        //Print the title of the webpage
+        log.debug(driver.getCurrentUrl());
+        //Print the URL of the current webpage
+        driver.quit();
+        //Close the browser
+    }
+}
