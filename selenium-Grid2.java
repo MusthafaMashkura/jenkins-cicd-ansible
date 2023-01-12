@@ -25,5 +25,5 @@ public void afterTest() {
 @Test 
 public void simpleTest() { 
 driver.get(baseUr1);
- Assert.assertEquas("Welcome: Mercury Tours", driver.getTitle()); } 
+ Assert.assertEquals("Welcome: Mercury Tours", driver.getTitle()); } 
 }
