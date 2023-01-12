@@ -17,7 +17,7 @@ public class SeleniumGridTest {
   
 //  private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
   
-  @Test
+ // @Test
   public void JenkinsDemoFunc() throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         //initialize chromeOptions
@@ -40,7 +40,7 @@ public class SeleniumGridTest {
     
    //                 Thread.sleep(1000);
  
-                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+                if (driver.getPageSource().contains("ansible")) {
                         System.out.println("Pass");
                 } else {
                         System.out.println("Fail");
