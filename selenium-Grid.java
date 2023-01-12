@@ -38,7 +38,7 @@ public class SeleniumGridTest {
 //        driver.quit();
         //Close the browser
     
-                    Thread.sleep(1000);
+   //                 Thread.sleep(1000);
  
                 if (driver.getPageSource().contains("I'm Feeling Lucky")) {
                         System.out.println("Pass");
