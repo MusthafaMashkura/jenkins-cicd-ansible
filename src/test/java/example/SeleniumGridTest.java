@@ -19,7 +19,7 @@ public class SeleniumGridTest {
   
 //  private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
   
- // @Test
+  @Test
   //public void JenkinsDemoFunc() throws MalformedURLException {
   //  public void JenkinsDemoFunc(){
   public static void main(String[] args) throws MalformedURLException {
