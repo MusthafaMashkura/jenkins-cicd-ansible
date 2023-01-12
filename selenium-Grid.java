@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 
 public class SeleniumGridTest {
   
-  private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
+//  private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
   
   @Test
   public void JenkinsDemoFunc() throws MalformedURLException {
