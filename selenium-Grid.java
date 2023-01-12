@@ -28,6 +28,7 @@ public class SeleniumGridTest {
         chromeOptions.setCapability("platformName", "LINUX");
         //Define in which mode your tests will run.
         chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
         //Define the platform on which you will execute your tests
         WebDriver driver = new RemoteWebDriver(new URL("http://13.232.140.244:4445/wd/hub"), chromeOptions);
         //URL to the hub running on your local system
