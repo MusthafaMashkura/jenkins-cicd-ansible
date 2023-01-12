@@ -8,7 +8,7 @@ import java.util.logging.*;
 //import log4j;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.*;
+//import org.apache.logging.log4j.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -31,11 +31,20 @@ public class SeleniumGridTest {
         //URL to the hub running on your local system
         driver.get("http://13.232.140.244:8080/hello-world-maven/");
         //URL to hit
-        log.debug(driver.getTitle());
+ //       log.debug(driver.getTitle());
         //Print the title of the webpage
-        log.debug(driver.getCurrentUrl());
+ //       log.debug(driver.getCurrentUrl());
         //Print the URL of the current webpage
-        driver.quit();
+//        driver.quit();
         //Close the browser
+    
+                    Thread.sleep(1000);
+ 
+                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+                        System.out.println("Pass");
+                } else {
+                        System.out.println("Fail");
+                }
+                driver.quit();
     }
 }
