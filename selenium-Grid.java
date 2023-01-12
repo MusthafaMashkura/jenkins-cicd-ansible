@@ -1,10 +1,10 @@
 import org.openqa.selenium.*; 
 import org.openqa.selenium.remote.DesiredCapabilities; 
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.apache.logging.log4j.*;
 import java.net.MalformedURLException; 
 import java.net.URL; 
 import org.openqa.selenium.remote.RemoteWebDriver; 
+import org.apache.logging.log4j.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -13,6 +13,7 @@ public class SeleniumGridTest {
   
   private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
   
+  @Test
   public void JenkinsDemoFunc() throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         //initialize chromeOptions
