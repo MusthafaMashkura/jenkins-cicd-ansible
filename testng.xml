@@ -9,7 +9,7 @@
    <class name="example.SeleniumTest"/> 
    <class name="example.SeleniumGridTest"/>
 -->
-   <class name="example.SeleniumGrid"/>
+   <class name="example.SeleniumGridTest"/>
   </classes>
  </test>
 </suite>
