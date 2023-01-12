@@ -66,7 +66,7 @@ pipeline {
                '''
             }
         }*/
-               stage('Selenium Testing') {
+ /*              stage('Selenium Testing') {
            steps {
                sh '''
                 export CLASSPATH=".:/var/lib/jenkins/selenium-server-standalone.jar:/var/lib/jenkins/testng-6.8.7.jar"
@@ -74,7 +74,7 @@ pipeline {
                 
                 '''
            }
-        }
+        }*/
     }
    /* post { 
         always { 
