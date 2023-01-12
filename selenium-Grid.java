@@ -10,6 +10,8 @@ import org.testng.annotations.*;
 
 public class SeleniumGridTest {
   
+  private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
+  
   public void JenkinsDemoFunc() throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         //initialize chromeOptions
