@@ -19,10 +19,10 @@ public class SeleniumGridTest {
   
 //  private static Logger log = LogManager.getLogger(SeleniumGridTest.class);
   
-@Test
-  //public void JenkinsDemoFunc() throws MalformedURLException {
+  @Test
+  public void JenkinsDemoFunc() throws MalformedURLException {
   //  public void JenkinsDemoFunc(){
-  public static void main(String[] args) throws MalformedURLException {
+  //public static void main(String[] args) throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         //initialize chromeOptions
    //     chromeOptions.setCapability("browserName", "chrome");
