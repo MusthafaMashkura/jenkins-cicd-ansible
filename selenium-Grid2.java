@@ -10,7 +10,7 @@ public class Grid_2 {
  WebDriver driver;
  String baseUrl, nodeURL; 
  @BeforeTest 
- public void setUpWthrows MalformedURLException {
+ public void setUp() throws MalformedURLException {
  baseUrl = "http://newtours.demoaut.com/";
  nodeURL = "http://192.168.1.4:5566/wd/hub"; 
  DesiredCapabilities capability = DesiredCapabilities.firefox();
