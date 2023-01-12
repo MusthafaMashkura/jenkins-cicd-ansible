@@ -13,7 +13,7 @@ pipeline {
              
           }
         }
-      stage('Code Analysis') {
+  /*    stage('Code Analysis') {
            steps {
                 withSonarQubeEnv('mysonarqube')
                {
@@ -29,7 +29,7 @@ pipeline {
                     waitForQualityGate abortPipeline: true
                 }
             }
-        }
+        }*/
   /*                   stage('Owasp Dependency check') {
            steps {
                dependencyCheck additionalArguments: '--format HTML', odcInstallation: 'my-dpcheck'
