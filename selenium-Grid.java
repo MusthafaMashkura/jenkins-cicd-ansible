@@ -1,6 +1,7 @@
 import org.openqa.selenium.*; 
 import org.openqa.selenium.remote.DesiredCapabilities; 
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.apache.logging.log4j.*;
 import java.net.MalformedURLException; 
 import java.net.URL; 
 import org.openqa.selenium.remote.RemoteWebDriver; 
