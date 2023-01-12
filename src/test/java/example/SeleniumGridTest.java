@@ -1,4 +1,4 @@
-package example
+package example;
 
 import org.openqa.selenium.*; 
 import org.openqa.selenium.remote.DesiredCapabilities; 
