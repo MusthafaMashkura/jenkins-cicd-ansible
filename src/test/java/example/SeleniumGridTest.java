@@ -25,14 +25,18 @@ public class SeleniumGridTest {
   public static void main(String[] args) throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         //initialize chromeOptions
-        chromeOptions.setCapability("browserName", "chrome");
+   //     chromeOptions.setCapability("browserName", "chrome");
         //Define on which browser you want to execute your tests.
-        chromeOptions.setCapability("platformName", "LINUX");
+   //     chromeOptions.setCapability("platformName", "LINUX");
         //Define in which mode your tests will run.
+        DesiredCapabilities capability = DesiredCapabilities.chrome();
+        capability.setBrowserName("chrome");
+        capability.setPlatform(Platform.LINUX);
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
         //Define the platform on which you will execute your tests
-        WebDriver driver = new RemoteWebDriver(new URL("http://13.232.140.244:4445/wd/hub"), chromeOptions);
+     //   WebDriver driver = new RemoteWebDriver(new URL("http://13.232.140.244:4445/wd/hub"), chromeOptions);
+        WebDriver driver = new RemoteWebDriver(new URL("http://13.232.140.244:4445/wd/hub"), capability);
         //URL to the hub running on your local system
         driver.get("http://13.232.140.244:8080/hello-world-maven/");
         //URL to hit
