@@ -1,3 +1,5 @@
+package example
+
 import org.openqa.selenium.*; 
 import org.openqa.selenium.remote.DesiredCapabilities; 
 import org.openqa.selenium.chrome.ChromeOptions;
