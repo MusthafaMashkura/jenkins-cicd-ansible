@@ -9,7 +9,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'ansible-roles-cicd', url: 'https://github.com/MusthafaMashkura/jenkins-cicd-ansible.git'
+                git branch: 'jenkins-selenium-grid', url: 'https://github.com/MusthafaMashkura/jenkins-cicd-ansible.git'
              
           }
         }
