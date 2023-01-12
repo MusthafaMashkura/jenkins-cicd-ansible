@@ -24,6 +24,6 @@ public void afterTest() {
  }
 @Test 
 public void simpleTest() { 
-driver.get(baseUr1);
+driver.get(baseUrl);
  Assert.assertEquals("Welcome: Mercury Tours", driver.getTitle()); } 
 }
