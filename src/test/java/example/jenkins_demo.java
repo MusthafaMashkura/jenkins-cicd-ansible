@@ -30,7 +30,7 @@ WebDriver driver=new ChromeDriver(chromeOptions);
  
 //WebDriver driver = new ChromeDriver();
 //it will open the goggle page
-driver.get("http://google.in"); 
+driver.get("http://13.232.140.244:8080/hello-world-maven/"); 
 //we expect the title “Google “ should be present 
 String Expectedtitle = "Google";
 //it will fetch the actual title 
