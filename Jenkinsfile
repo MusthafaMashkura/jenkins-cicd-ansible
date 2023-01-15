@@ -37,7 +37,7 @@ pipeline {
         }
       stage('Build') {
            steps {
-               sh 'mvn clean test package'
+               sh 'mvn clean package -DskipTests'
             }
         }
       stage('Check Ansible version') {
@@ -64,6 +64,11 @@ pipeline {
                 docker stop owasp && docker rm owasp
                 
                '''
+            }
+        }
+         stage('Selenium Testing') {
+           steps {
+               sh 'mvn test'
             }
         }
     }
