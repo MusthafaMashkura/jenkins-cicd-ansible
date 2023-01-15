@@ -37,7 +37,7 @@ pipeline {
         }*/
       stage('Build') {
            steps {
-               sh 'mvn clean package -Dskiptests'
+               sh 'mvn clean package -DskipTests'
             }
         }
       stage('Check Ansible version') {
