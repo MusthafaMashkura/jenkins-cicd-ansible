@@ -75,6 +75,11 @@ pipeline {
                 '''
            }
         }*/
+        stage('Selenium TESTS') {
+            steps {
+                sh 'mvn test'
+            }
+        }
     }
    /* post { 
         always { 
