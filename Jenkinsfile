@@ -37,7 +37,7 @@ pipeline {
         }*/
       stage('Build') {
            steps {
-               sh 'mvn clean test package'
+               sh 'mvn clean package'
             }
         }
       stage('Check Ansible version') {
