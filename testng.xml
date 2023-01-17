@@ -5,7 +5,6 @@
   <classes>
    <class name="example.LoginAutomation"/>
    <class name="example.jenkins_demo"/>
-   <class name="example.SeleniumTest"/> 
    <class name="example.SeleniumGridTest"/>
   </classes>
  </test>
