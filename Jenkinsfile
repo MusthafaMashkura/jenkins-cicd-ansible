@@ -86,4 +86,11 @@ pipeline {
             cleanWs()
         }
     }*/
+    post{
+        always{
+            emailext to: "musthamsd@gmail.com",
+            subject: "Selenium Report",
+            body: ${FILE,path="/var/lib/jenkins/workspace/Selenium-Grid-Pipeline/target/surefire-reports/emailable-report.html"}
+        }
+    }
 }
