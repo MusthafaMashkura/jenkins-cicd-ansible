@@ -93,9 +93,11 @@ pipeline {
     }*/
     post{
         always{
-            emailext to: "musthamsd@gmail.com",
-            subject: "Selenium Report",
-            body: "${"/var/lib/jenkins/workspace/Selenium-Grid-Pipeline/target/surefire-reports/emailable-report.html"}"
+//            emailext to: "musthamsd@gmail.com",
+//            subject: "Selenium Report",
+//            body: "${"/var/lib/jenkins/workspace/Selenium-Grid-Pipeline/target/surefire-reports/emailable-report.html"}"
+            emailext attachLog: true, attachmentsPattern: '**/target/surefire-reports/emailable-report.html', body: 'TEST Report', presendScript: '''def reportPath = build.getWorkspace().child("target/surefire-reports/emailable-report.html")
+msg.setContent(reportPath.readToString(), "text/html");''', subject: 'Automation testing result', to: 'musthamsd@gmail.com'
         }
     }
 }
