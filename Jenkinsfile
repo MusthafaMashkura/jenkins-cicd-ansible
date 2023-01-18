@@ -80,11 +80,11 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Publish Testng report in Jenkins dashboard') {
+      /*  stage('Publish Testng report in Jenkins dashboard') {
             steps {
-                testNG reportFilenamePattern: 'target/surefire-reports/testng-results.xml'
+                testNG reportFilenamePattern: '**/target/surefire-reports/testng-results.xml'
             }
-        }
+        }*/
     }
    /* post { 
         always { 
