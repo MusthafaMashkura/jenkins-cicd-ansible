@@ -98,7 +98,7 @@ pipeline {
 //            body: "${"/var/lib/jenkins/workspace/Selenium-Grid-Pipeline/target/surefire-reports/emailable-report.html"}"
   //          emailext attachLog: true, attachmentsPattern: '**/target/surefire-reports/emailable-report.html', body: 'TEST Report', presendScript: '''def reportPath = build.getWorkspace().child("target/surefire-reports/emailable-report.html")
 //msg.setContent(reportPath.readToString(), "text/html");''', subject: 'Automation testing result', to: 'musthamsd@gmail.com'
-            emailext attachLog: true, attachmentsPattern: '**/target/surefire-reports/emailable-report.html', body: 'TEST Trport', subject: 'Automation testing result', to: 'musthamsd@gmail.com'
+            emailext attachLog: true, attachmentsPattern: '**/target/surefire-reports/emailable-report.html', body: 'Please find the attachment of the selenium testing report', subject: 'Selenium Testing Report', to: 'musthamsd@gmail.com'
         }
     }
 }
