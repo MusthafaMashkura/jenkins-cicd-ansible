@@ -1,6 +1,6 @@
 ---
 # vars file for ansible_tomcat_roles
-download_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.tar.gz
+download_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.85/bin/apache-tomcat-8.5.85.tar.gz
 #user: tomcat
 user: !vault |
           $ANSIBLE_VAULT;1.1;AES256
